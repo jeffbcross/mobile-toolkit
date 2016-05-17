@@ -1,4 +1,4 @@
-# Add a Service Worker to an [Angular CLI](https://cli.angular.io) App
+# Service Worker
 
 This guide assumes you've already completed the [Setup](./cli-setup.md)
 and [App Shell](./app-shell.md) guides.

@@ -1,4 +1,4 @@
-# Add an App Shell to an [Angular CLI](https://cli.angular.io) App
+# App Shell
 
 This guide assumes that the [CLI setup guide](./cli-setup.md) has been completed.
 
