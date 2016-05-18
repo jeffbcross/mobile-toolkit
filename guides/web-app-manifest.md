@@ -82,7 +82,7 @@ work needed to help browsers know how to install your app.
 ...
 ```
 
-## How To Install the App
+## How Users Install the App
 
 Browsers support installation in various ways. In **Chrome on Android**,
 an app can be installed by selecting "Add to Home Screen" from the
@@ -94,7 +94,7 @@ bar, and will also prompt users to install the app, using the same criteria
 as Chrome<sup>[2](#footnote2)</sup>.
 
 **Firefox on Android** has support for adding to home screen, and will use icons and short_name
-from the Web App Manifest. Work is planned to support banner prompts<sup>[3](#footnote3)</sup>.
+from the Web App Manifest. Work is planned to support automatic prompts to install<sup>[3](#footnote3)</sup>.
 
 **Safari on iOS** doesn't yet support Web App Manifest, but does allow for proprietary meta tags to
 be added to a page to let users add it to the home screen with proper icons, title, and display
@@ -106,12 +106,19 @@ icons and meta tags to allow installing to home screen on Safari.
 ## Further Reading
 
  * [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)  (Mozilla Developer Network)
- * [Installable Web Apps with the Web App Manifest in Chrome for Android](https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android?hl=en) (Chrome Developers)
+ * [Installable Web Apps with the Web App Manifest in Chrome for Android](https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android?hl=en) (Google Developers)
  * [Installable Web Apps and Add to Home screen](https://dev.opera.com/articles/installable-web-apps/) (Dev.Opera)
 
-Next, let's add some UI to our App Shell [App Shell](./app-shell.md) to our app.
+---
+
+## [Next, let's build our App Shell.](./app-shell.md)
+
+---
+
+### Footnotes
 
  1. <a name="footnote1"></a>[Increasing Engagement with Web App Install Banners
-](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en)
- 2. <a name="footnote2"></a>[Progressive Web App install banners come to Opera for Android](https://dev.opera.com/blog/web-app-install-banners/)
+](https://developers.google.com/web/updates/2015/03/increasing-engagement-with-app-install-banners-in-chrome-for-android?hl=en) (Google Developers)
+ 2. <a name="footnote2"></a>[Progressive Web App install banners come to Opera for Android](https://dev.opera.com/blog/web-app-install-banners/) (Dev.Opera)
  3. <a name="footnote3"></a>[Bug 1212648 - Progressive Web Apps Support](https://bugzilla.mozilla.org/show_bug.cgi?id=1212648) (Bugzilla@Mozilla)
+ 4. <a name="footnote4"></a>[Configuring Web Applications](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html) (iOS Developer Library)
