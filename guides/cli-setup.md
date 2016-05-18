@@ -1,6 +1,11 @@
-# Create a Mobile Web App with [Angular CLI](https://cli.angular.io)
+# Create a Progressive Web App with [Angular CLI](https://cli.angular.io)
 
-Start by installing [Angular CLI](https://cli.angular.io).
+Progressive Web Apps are web apps that combine the benefits of the Web
+with the capabilities and performance of native Apps. Angular makes it
+easy to get started building progressive Web apps with our Angular Mobile
+Toolkit, which is integrated with [Angular CLI](https://cli.angular.io).
+
+To get started, install Angular CLI from [npm](https://www.npmjs.com/).
 
 ```
 $ npm install -g angular-cli
@@ -21,7 +26,7 @@ Then serve the app:
 $ ng serve
 ```
 
-Navigate to [localhost:4200](http://localhost:4200) in your browser, and you should see a simple page that says “hello-mobile works!”.
+Navigate to [localhost:4200](http://localhost:4200) in your browser, and you should see a simple page that says "hello-mobile works!".
 
 ## --mobile
 
@@ -34,6 +39,8 @@ started on the right foot:
  * A **Service Worker** script to automatically cache your app for fast loading,
    with or without an internet connection. Note: the Service Worker is only installed in production mode, i.e. via `ng serve --prod` or `ng build --prod`.
 
+We'll go deeper into these concepts in subsequent guides.
+
 For reference, see the example app created by Angular CLI in this repository at [/guides-example](../guides-example)
 
-[Next, let's learn how the Web App Manifest works.](./web-app-manifest.md)
+[Next, let's learn how to take advantage of the Web App Manifest.](./web-app-manifest.md)
