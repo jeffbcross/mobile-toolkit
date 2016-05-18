@@ -11,6 +11,10 @@ const packages: any = {
   '@angular2-material/toolbar': {
     defaultExtension: 'js',
     main: 'toolbar.js'
+  },
+  '@angular2-material/progress-circle': {
+    defaultExtension: 'js',
+    main: 'progress-circle.js'
   }
 };
 

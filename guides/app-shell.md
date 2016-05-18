@@ -195,13 +195,61 @@ headache of maintaining two copies of the same component.
 
 However, there are usually components that you'd like to have in your App Shell
 but not your app at runtime, and vice versa. For example, we might want to have
-a router outlet in our dynamic application, and a loading indicator in its place in
+a router outlet in our dynamic application, and a progress indicator in its place in
 our App Shell. Fortunately, our app component is already set up with a couple of
 directives that make this simple, `*shellRender` and `*shellNoRender`. These directives
 are already included in the `HelloMobileAppComponent` via the `APP_SHELL_DIRECTIVES` added
 to the `directives` list.
 
+Let's add a progress indicator to our app shell to see put these directives to use. Of course,
+we'll use the progress indicator provided by Angular Material.
 
+`$ npm install --save @angular2-material/progress-circle`
+
+Then we'll import the `MdProgressCircle` directive to `HelloMobileAppComponent`,
+add it to our component's `directives`, and add it to our template.
+
+`src/app/hello-mobile-app.component.ts`:
+
+```typescript
+import { Component } from '@angular/core';
+import { MdToolbar } from '@angular2-material/toolbar';
+import { MdProgressCircle } from '@angular2-material/progress-circle';
+
+@Component({
+  moduleId: module.id,
+  selector: 'hello-mobile-app',
+  template: `
+    <md-toolbar>
+      {{title}}
+    </md-toolbar>
+  `,
+  styles: [],
+  directives: [MdToolbar, MdProgressCircle]
+})
+export class HelloMobileAppComponent {
+  title = 'Hello Mobile';
+}
+```
+
+We need to add an entry for the progress-circle to system-config.ts so SystemJS knows
+how to load it:
+
+`src/system-config.ts`:
+
+```typescript
+/** User packages configuration. */
+const packages: any = {
+  '@angular2-material/toolbar': {
+    defaultExtension: 'js',
+    main: 'toolbar.js'
+  },
+  '@angular2-material/progress-circle': {
+    defaultExtension: 'js',
+    main: 'progress-circle.js'
+  }
+};
+```
 
 
 Now our shell will render immediately, without being blocked by any network requests.
