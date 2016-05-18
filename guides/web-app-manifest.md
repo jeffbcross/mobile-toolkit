@@ -1,5 +1,7 @@
 # Web App Manifest
 
+(This guide assumes that the [CLI setup guide](./cli-setup.md) has been completed.)
+
 Web App Manifest is a new standard feature of the Web Platform, which
 allows applications to provide some metadata to help browsers know how
 to install the application to the device's home screen.

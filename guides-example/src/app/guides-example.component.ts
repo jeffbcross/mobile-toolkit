@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
+import { MdToolbar } from '@angular2-material/toolbar';
 
 @Component({
   moduleId: module.id,
   selector: 'guides-example-app',
   template: `
-  <h1>
-    {{title}}
-  </h1>
+    <md-toolbar>
+      {{title}}
+    </md-toolbar>
   `,
-  styles: []
+  styles: [],
+  directives: [MdToolbar]
 })
 export class GuidesExampleAppComponent {
-  title = 'guides-example works!';
+  title = 'Hello Mobile';
 }
